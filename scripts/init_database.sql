@@ -20,8 +20,8 @@ go
 	
 if exists (select 1 from sys.databases where name = 'DataWarehouse')
 begin
-    alter DATABASE DataWarehouse set SINGLE_USER with rollback immediate;
-    drop DATABASE DataWarehouse;
+    alter database DataWarehouse set SINGLE_USER with rollback immediate;
+    drop database DataWarehouse;
 end;
 go
   
