@@ -18,11 +18,11 @@ go
 	
   -- Drop and recreate the 'DataWarehouse' database
 	
-IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
-BEGIN
-    ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-    DROP DATABASE DataWarehouse;
-END;
+if exists (select 1 from sys.databases where name = 'DataWarehouse')
+begin
+    alter DATABASE DataWarehouse set SINGLE_USER with rollback immediate;
+    drop DATABASE DataWarehouse;
+end;
 go
   
  -- CREATE Database 'DataWarehouse'
