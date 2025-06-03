@@ -38,7 +38,7 @@ create table silver.crm_prd_info(
 	prd_line    	        nvarchar(50),
 	prd_start_dt	        date,
 	prd_end_dt   	        date,
-	dwh_create_date	       datetime2 default getdate()
+	dwh_create_date	        datetime2 default getdate()
 );
 go
 
